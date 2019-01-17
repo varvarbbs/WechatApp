@@ -1,0 +1,75 @@
+<!--pages/page/home.wxml-->
+<import src="../../template/ShopCell.wxml" />
+<import src="../../template/ProductCell.wxml" />
+<!-- 广告位 -->
+<swiper indicator-dots='true' indicator-color='#ffffff' indicator-active-color='#fe4600' interval='3000' autoplay='true'>
+  <block wx:for-items="{{adList}}" wx:key="{{item.keyid}}">
+    <swiper-item>
+      <image class='adImage' src='{{item.img1}}'></image>
+    </swiper-item>
+  </block>
+</swiper>
+<!-- 按钮 -->
+<view class='menuPanel'>
+  <view>
+    <image src='/images/findshop.png'></image>
+    <text>找商家</text>
+  </view>
+  <view>
+    <image src='/images/findproduct.png'></image>
+    <text>找产品</text>
+  </view>
+  <view>
+    <image src='/images/sale.png'></image>
+    <text>供应信息</text>
+  </view>
+  <view>
+    <image src='/images/buy.png'></image>
+    <text>求购信息</text>
+  </view>
+</view>
+<!-- 店铺推荐 -->
+<block wx:if='{{hasShop}}'>
+  <view class='homeShopHead'>
+    <image class='head' src='/images/home_shop_icon.png'></image>
+  </view>
+</block>
+<view class='homeShopBody'>
+  <block wx:for-items="{{shopList}}" wx:key="{{item.shopId}}">
+    <view bindtap="onShopClick" data-id="{{item.shopId}}">
+      <template is="ShopCell" data="{{item}}"></template>
+    </view>
+  </block>
+</view>
+<!-- 产品优选 -->
+<!-- <block we:if='{{hasOptimization}}'>
+  <view class='homeShopHead'>
+    <image class='head' src='/images/home_recommend_icon.png'></image>
+  </view>
+</block> -->
+<!--热门推荐 -->
+<block we:if='{{hasFixed}}'>
+  <view class='homeShopHead'>
+    <image class='head' src='/images/home_hot_icon.png'></image>
+  </view>
+</block>
+<view class='homeShopBody'>
+  <block wx:for-items="{{hotFixedList}}" wx:key="{{item.keyid}}">
+    <view bindtap="onProductClick" data-id="{{item.keyid}}">
+      <template is="SmallProductCell" data="{{item}}"></template>
+    </view>
+  </block>
+</view>
+<!--发现好货 -->
+<block we:if='{{hasFind}}'>
+  <view class='homeShopHead'>
+    <image class='head' src='/images/home_find_icon.png'></image>
+  </view>
+</block>
+<view class='homeShopBody'>
+  <block wx:for-items="{{findList}}" wx:key="{{item.keyid}}">
+    <view bindtap="onProductClick" data-id="{{item.keyid}}">
+      <template is="ProductCell" data="{{item}}"></template>
+    </view>
+  </block>
+</view>

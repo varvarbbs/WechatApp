@@ -1,0 +1,52 @@
+.productcell {
+  position: relative;
+  width: 369rpx;
+  height: 560rpx;
+  background-color: white;
+  margin-bottom: 12rpx;
+}
+
+.productcell image {
+  width: 369rpx;
+  height: 369rpx;
+}
+
+.productcell .name {
+  margin-top: 17rpx;
+  margin-left: 17rpx;
+  margin-right: 17rpx;
+  color: #333;
+  font-size: 35rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.smallproductcell {
+  position: relative;
+  width: 236rpx;
+  height: 343.75rpx;
+  background-color: white;
+  margin-bottom: 12rpx;
+}
+
+.smallproductcell image {
+  width: 236rpx;
+  height: 236rpx;
+}
+
+.smallproductcell .name {
+  margin-left: 17rpx;
+  margin-right: 17rpx;
+  color: #333;
+  font-size: 30rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}

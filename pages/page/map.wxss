@@ -1,0 +1,10 @@
+/* pages/page/map.wxss */
+.map{
+  width: 100vw;
+  height: 100vh;
+}
+
+.nopermit{
+  align-items: center;
+  justify-content: center;
+}

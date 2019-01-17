@@ -1,0 +1,10 @@
+<!--pages/page/map.wxml-->
+<block wx:if="{{hasData}}">
+  <map class='map' id="myMap" latitude='{{latitude}}' longitude='{{longitude}}' markers='{{markers}}' ></map>
+</block>
+<block wx:else>
+  <view class='fullScreen nopermit'>
+    <text>请允许获取你的位置!</text>
+  </view>
+</block>
+

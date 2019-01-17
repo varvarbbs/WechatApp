@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/page/home",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/page/searchProduct",
+    "pages/page/searchShop",
+    "pages/page/shop",
+    "pages/page/product",
+    "pages/page/map"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "我们将获了你的位置用于显示在地图上(自定义内容)"
+    }
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#58626c",
+    "selectedColor": "#fe4600",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/page/home",
+        "iconPath": "images/tab_home.png",
+        "selectedIconPath": "images/tab_home_select.png",
+        "text": "配件城"
+      },
+      {
+        "pagePath": "pages/page/map",
+        "iconPath": "images/tab_map.png",
+        "selectedIconPath": "images/tab_map_select.png",
+        "text": "我的位置"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/tab_me.png",
+        "selectedIconPath": "images/tab_me_select.png",
+        "text": "个人资料"
+      }
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+<template name="ProductCell">
+  <view class='productcell'>
+    <image src='{{item.thumbnailpic}}'></image>
+    <text class='name'>{{item.name}}</text>
+  </view>
+</template>
+
+<template name="SmallProductCell">
+  <view class='smallproductcell'>
+    <image src='{{item.thumbnailpic}}'></image>
+    <text class='name'>{{item.name}}</text>
+  </view>
+</template>

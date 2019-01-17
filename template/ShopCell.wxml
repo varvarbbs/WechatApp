@@ -1,0 +1,10 @@
+<template name="ShopCell">
+  <view class='shopcell'>
+    <image src='{{item.publicitypic}}'></image>
+    <view class='content'>
+      <image src='{{item.shopLogo}}'></image>
+      <text class='name'>{{item.shopName}}</text>
+      <text class='address'>{{item.descaddress}}</text>
+    </view>
+  </view>
+</template>
